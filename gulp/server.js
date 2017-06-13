@@ -27,7 +27,7 @@ gulp.task('server', function(callback) {
         });
         gulp.watch('src/icons/*.*', ['icon-font']);
         gulp.watch('src/styles/**/*.scss', ['sass', 'sass-lint']);
-        gulp.watch('src/index.njk', ['render-templates']);
+        gulp.watch('src/**/*.njk', ['render-templates']);
         gulp.watch([
             '.tmp/**/*.css',
             '.tmp/**/*.html'

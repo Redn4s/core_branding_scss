@@ -1,0 +1,196 @@
+/**
+ * CONFIGURATOR
+ * -------------------------------------------------------------------
+ */
+
+body {
+
+  @include at($screen-md) {
+    display: flex;
+    margin: 0;
+  }
+}
+
+.u-main {
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: column nowrap;
+  min-height: calc(100vh - #{rem(48px)});
+}
+
+.u-wrapper {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.o-header__actions {
+  float: right;
+
+  .a-avatar {
+    float: left;
+  }
+
+  .m-flyout > .a-button {
+    width: auto;
+  }
+
+  .m-flyout__content {
+    top: rem(47px);
+  }
+}
+
+.o-configurator {
+  margin: rem(96px) auto;
+}
+
+.o-configurator__header {
+  background-color: $brand-primary;
+  color: $white;
+  padding: rem(24px);
+}
+
+.o-configurator__nav {
+  @include at($screen-sm) {
+    align-items: flex-start;
+    display: flex;
+  }
+
+  background-color: $white;
+  border-bottom: 1px solid $border-color-light;
+  border-left: 1px solid $border-color-light;
+  border-right: 1px solid $border-color-light;
+
+  .m-nav-tabs {
+    flex-grow: 1;
+  }
+
+  [class*='a-button'] {
+
+    @include to($screen-sm) {
+      display: block;
+      width: 100%;
+    }
+
+    @include at($screen-sm) {
+      line-height: rem(55px);
+    }
+  }
+}
+
+.o-configurator__title {
+  font-family: $font-family-base;
+  font-weight: $bold;
+}
+
+.o-configurator__body {
+  background-color: $white;
+  border-bottom: 1px solid $border-color-light;
+  border-left: 1px solid $border-color-light;
+  border-right: 1px solid $border-color-light;
+  padding: rem(48px) rem(24px);
+}
+
+.o-configurator__body--split {
+
+  @include at($screen-sm) {
+    display: flex;
+  }
+}
+
+.o-configurator__body__column {
+  @include at($screen-sm) {
+    width: 50%;
+  }
+
+  width: 100%;
+
+  &:nth-child(odd) {
+    @include at($screen-sm) {
+      margin-bottom: 0;
+      padding-right: rem(24px);
+    }
+
+    border-right: 1px solid $border-color-light;
+    margin-bottom: rem(24px);
+  }
+
+  &:nth-child(even) {
+
+    @include at($screen-sm) {
+      padding-left: rem(24px);
+    }
+  }
+}
+
+.o-configurator__footer {
+  @include at($screen-sm) {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  background-color: $white;
+  border-bottom: 1px solid $border-color-light;
+  border-left: 1px solid $border-color-light;
+  border-right: 1px solid $border-color-light;
+  display: flex;
+  flex-direction: column;
+  padding: rem(16px) rem(24px);
+}
+
+.o-configurator__footer__column {
+  @include at($screen-sm) {
+    width: 50%;
+
+    &:first-child [class*='a-button'] {
+      margin-bottom: 0;
+    }
+  }
+
+  &:first-child [class*='a-button'] {
+    margin-bottom: rem(12px);
+  }
+
+  width: 100%;
+
+  [class*='a-button'] {
+    @include at($screen-sm) {
+      width: auto;
+    }
+
+    width: 100%;
+  }
+}
+
+.a-form-half {
+  &:not(:last-child) {
+    margin-bottom: rem(24px);
+  }
+
+  @include at($screen-md) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  > .a-input,
+  > .a-datepicker,
+  > .a-timepicker {
+
+    &:nth-child(odd) {
+      margin-bottom: rem(24px);
+    }
+
+    @include at($screen-md) {
+      width: calc(50% - #{rem(12px)});
+
+      &:nth-child(odd) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.m-pagination {
+  justify-content: center;
+}
+

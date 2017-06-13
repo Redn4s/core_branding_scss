@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+    <!-- CSS /////////////////////////////////////////////////////////
+    - https://github.com/filamentgroup/loadCSS
+
+    Using 'gulp-usemin' to concatenate CSS files in production
+    Following a Mobile First approach, all media queries are
+    combined in a separate file
+
+    Note: <link ... media="screen and (min-width: 40em)" />
+    only defines when CSS will be applied, it will not block
+    the file from being downloaded
+    -->
+
+    <!-- build:css css/m.css -->
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- endbuild -->
+
+
+    <!-- SEO /////////////////////////////////////////////////////////
+    - http://support.google.com/webmasters/bin/answer.py?hl=nl&answer=79812&topic=2371375&ctx=topic
+    - http://www.iacquire.com/blog/18-meta-tags-every-webpage-should-have-in-2013
+    - http://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md
+    - http://moz.com/blog/meta-data-templates-123
+
+    Set meta-data and force search engines to display this information
+    in search results (this prevents caching of meta-data)
+    -->
+
+    <title>Core Branding Antwerpen</title>
+
+    <meta name="description" content="Core Branding Antwerpen" />
+    <meta name="robots" content="noodp, noydir" />
+
+
+    <!-- META-TAGS FOR MOBILE ////////////////////////////////////////
+    - http://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+    - http://www.metatags.nl/mobiele_metatags_voor_de_smartphone
+    - http://github.com/h5bp/mobile-boilerplate/wiki/The-Markup
+
+    Let search engines know this page is optimized for mobile devices
+    and enable smooth font rendering on IE Mobile
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta http-equiv="cleartype" content="on" />
+    -->
+
+    <!--
+    Set the viewport for IOS to enable media queries and prevent phone
+    numbers from being displayed as hyperlinks (IOS default behavior)
+    Note: don't disable the ability to zoom, it's bad UX
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no" />
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+</head>
+<body class="has-header u-bg-light">
+    <div class="u-main">
+        <header class="o-header o-header--fixed">
+            <a href="#" class="o-header__logo">
+                <img src="../images/a-logo.svg" alt="Officieel Logo Antwerpen">
+            </a>
+
+            <div class="o-header__actions">
+                <span class="a-avatar">
+                    <img src="https://api.adorable.io/avatars/285/sandergeenen.png" alt="avatar image" />
+                </span>
+
+                <div class="m-flyout m-flyout--sm m-flyout--right">
+                    <button class="a-button">Sander Geenen</button>
+
+                    <div class="m-flyout__content has-padding">
+                        <button class="a-button a-button--danger has-icon-left a-button--block">
+                            <span class="fa fa-power-off"></span>Afmelden
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="u-wrapper">
+            <div class="u-container">
+                <div class="o-configurator">
+                    <div class="o-configurator__header">
+                        <h6 class="o-configurator__title">Salesforce - Ticket API Configurator</h6>
+                    </div>
+
+                    <div class="o-configurator__nav">
+                        <ul class="m-nav-tabs m-nav-tabs--left">
+                            <li class="is-active">
+                                <a href="/pages/configurator.html"><span class="fa fa-gear"></span>Configurator</a>
+                            </li>
+
+                            <li>
+                                <a href="/pages/logs.html"><span class="fa fa-list-ul"></span>Logs</a>
+                            </li>
+
+                            <li>
+                                <a href="/pages/more_info.html"><span class="fa fa-question-circle-o"></span>Meer info</a>
+                            </li>
+                        </ul>
+
+                        <a href="/pages/synchronize.html" class="a-button a-button--success has-icon-left">
+                            <i class="fa fa-refresh"></i>Synchroniseren
+                        </a>
+                    </div>
+
+                    <div class="o-configurator__body o-configurator__body--split">
+                        <div class="o-configurator__body__column">
+                            <div class="a-form-half">
+                                <div class="a-input">
+                                    <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
+                                </div>
+
+                                <div class="a-input has-icon-right">
+                                    <div class="a-input__wrapper">
+                                        <select name="input-selected" id="input-select">
+                                            <option disabled selected>Maak uw keuze...</option>
+                                            <option value="1">Optie 1</option>
+                                            <option value="2">Optie 2</option>
+                                            <option value="3">Optie 3</option>
+                                            <option value="4" disabled>Optie 4 disabled</option>
+                                            <option value="5">Optie 5</option>
+                                        </select>
+
+                                        <span class="fa fa-angle-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="a-form-half">
+                                <div class="a-input">
+                                    <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
+                                </div>
+
+                                <div class="a-input has-icon-right">
+                                    <div class="a-input__wrapper">
+                                        <select name="input-selected" id="input-select">
+                                            <option disabled selected>Maak uw keuze...</option>
+                                            <option value="1">Optie 1</option>
+                                            <option value="2">Optie 2</option>
+                                            <option value="3">Optie 3</option>
+                                            <option value="4" disabled>Optie 4 disabled</option>
+                                            <option value="5">Optie 5</option>
+                                        </select>
+
+                                        <span class="fa fa-angle-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="a-form-half">
+                                <div class="a-input">
+                                    <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
+                                </div>
+
+                                <div class="a-input has-icon-right">
+                                    <div class="a-input__wrapper">
+                                        <select name="input-selected" id="input-select">
+                                            <option disabled selected>Maak uw keuze...</option>
+                                            <option value="1">Optie 1</option>
+                                            <option value="2">Optie 2</option>
+                                            <option value="3">Optie 3</option>
+                                            <option value="4" disabled>Optie 4 disabled</option>
+                                            <option value="5">Optie 5</option>
+                                        </select>
+
+                                        <span class="fa fa-angle-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="a-form-half">
+                                <div class="a-input">
+                                    <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
+                                </div>
+
+                                <div class="a-input has-icon-right">
+                                    <div class="a-input__wrapper">
+                                        <select name="input-selected" id="input-select">
+                                            <option disabled selected>Maak uw keuze...</option>
+                                            <option value="1">Optie 1</option>
+                                            <option value="2">Optie 2</option>
+                                            <option value="3">Optie 3</option>
+                                            <option value="4" disabled>Optie 4 disabled</option>
+                                            <option value="5">Optie 5</option>
+                                        </select>
+
+                                        <span class="fa fa-angle-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="o-configurator__body__column">
+                            <div class="a-form-half">
+                                <div class="a-input">
+                                    <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
+                                </div>
+
+                                <div class="a-input has-icon-right">
+                                    <div class="a-input__wrapper">
+                                        <select name="input-selected" id="input-select">
+                                            <option disabled selected>Maak uw keuze...</option>
+                                            <option value="1">Optie 1</option>
+                                            <option value="2">Optie 2</option>
+                                            <option value="3">Optie 3</option>
+                                            <option value="4" disabled>Optie 4 disabled</option>
+                                            <option value="5">Optie 5</option>
+                                        </select>
+
+                                        <span class="fa fa-angle-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="a-form-half">
+                                <div class="a-input">
+                                    <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
+                                </div>
+
+                                <div class="a-input has-icon-right">
+                                    <div class="a-input__wrapper">
+                                        <select name="input-selected" id="input-select">
+                                            <option disabled selected>Maak uw keuze...</option>
+                                            <option value="1">Optie 1</option>
+                                            <option value="2">Optie 2</option>
+                                            <option value="3">Optie 3</option>
+                                            <option value="4" disabled>Optie 4 disabled</option>
+                                            <option value="5">Optie 5</option>
+                                        </select>
+
+                                        <span class="fa fa-angle-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="a-form-half">
+                                <div class="a-input">
+                                    <input type="text" name="input-text" id="input-text" placeholder="Placeholder" />
+                                </div>
+
+                                <div class="a-input has-icon-right">
+                                    <div class="a-input__wrapper">
+                                        <select name="input-selected" id="input-select">
+                                            <option disabled selected>Maak uw keuze...</option>
+                                            <option value="1">Optie 1</option>
+                                            <option value="2">Optie 2</option>
+                                            <option value="3">Optie 3</option>
+                                            <option value="4" disabled>Optie 4 disabled</option>
+                                            <option value="5">Optie 5</option>
+                                        </select>
+
+                                        <span class="fa fa-angle-down"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="o-configurator__footer">
+                        <div class="o-configurator__footer__column">
+                            <button class="a-button-outline a-button--danger">Herstel wijzigingen</button>
+                        </div>
+
+                        <div class="o-configurator__footer__column u-text-right">
+                            <button class="a-button">Configuratie opslaan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="o-footer">
+            <span class="o-footer__label">© 2017 Stad Antwerpen | <a href="#">Privacy</a> &amp; <a href="#">gebruiksvoorwaarden</a></span>
+        </footer>
+    </div>
+</body>
+</html>
+
