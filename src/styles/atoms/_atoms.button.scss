@@ -280,6 +280,7 @@
 
   &.a-button--large {
     font-size: rem($btn-font-size-lg);
+    line-height: $spacer-xl;
     min-height: $spacer-xl;
 
     .fa {
