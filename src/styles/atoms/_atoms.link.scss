@@ -9,7 +9,7 @@
  * -------------------------------------------------------------------
  */
 
-a:not(.a-button) {
+a:not(.a-button, .a-button-outline, .a-button-negative, .a-button-transparent) {
 
   &.has-icon-left .fa,
   &.has-icon-right .fa {
