@@ -194,3 +194,75 @@ body {
   justify-content: center;
 }
 
+.akit-component-statusbar {
+  @include clearfix;
+  background-color: $state-info;
+  box-shadow: $box-shadow;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  left: 0;
+  min-height: $spacer * 4;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 5002;
+
+  &.error {
+    background-color: $state-danger;
+  }
+
+  &.warning {
+    background-color: $state-warning;
+  }
+
+  &.success {
+    background-color: $state-success;
+  }
+
+  &.info {
+    background-color: $state-info;
+  }
+}
+
+.akit-component-statusbar__content {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  padding: $spacer;
+  text-align: center;
+
+  a {
+    color: $white;
+  }
+
+  p {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.akit-component-statusbar__status,
+.akit-component-statusbar__close {
+  background-color: rgba(0, 0, 0, .2);
+  display: flex;
+  text-align: center;
+  width: $spacer * 2;
+
+  .fa {
+    align-self: center;
+    font-size: $spacer;
+    width: $spacer * 2;
+  }
+}
+
+.akit-component-statusbar__close {
+  cursor: pointer;
+  transition: background $animation-normal;
+
+  &:hover, &:focus {
+    background-color: $brand-secondary;
+  }
+}
