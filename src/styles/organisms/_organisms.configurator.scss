@@ -51,7 +51,6 @@ body {
 
 .o-configurator__nav {
   @include at($screen-sm) {
-    align-items: flex-start;
     display: flex;
   }
 
@@ -113,10 +112,10 @@ body {
   &:nth-child(odd) {
     @include at($screen-sm) {
       margin-bottom: 0;
-      padding-right: $spacer;
+      padding-right: $spacer-xs;
+      border-right: 1px solid $border-color-light;
     }
 
-    border-right: 1px solid $border-color-light;
     margin-bottom: $spacer;
   }
 
@@ -124,6 +123,42 @@ body {
 
     @include at($screen-sm) {
       padding-left: $spacer;
+    }
+  }
+}
+
+.m-configuration {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    padding-bottom: $spacer-lg;
+
+    @include at($screen-md) {
+      padding-bottom: $spacer;
+    }
+  }
+}
+
+.m-configuration__form {
+  flex-grow: 1;
+
+  @include at($screen-md) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .a-input {
+
+    &:first-child {
+
+      @include to($screen-md) {
+        margin-bottom: $spacer;
+      }
+    }
+
+    @include at($screen-md) {
+      width: calc(50% - #{rem(12px)});
     }
   }
 }
